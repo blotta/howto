@@ -66,8 +66,8 @@ Using the `noatime` flag option in fstab, eliminates the need by the system to m
 
 
 > /etc/fstab
-  >> /dev/sda1   /	ext4   defaults,noatime   0 1  
-  >> /dev/sda2   /home  ext4   defaults,noatime   0 2
+  >> /dev/sda1   /      ext4   defaults,noatime   0 1  
+  >> /dev/sda2   /home  ext4   defaults,noatime   0 2  
  
 
 
@@ -90,5 +90,5 @@ This will tell the system to only use the swap partition when the free memory sp
 -------
 
 ###Sources
-[ArchWiki: Maximizing Performance](https://wiki.archlinux.org/index.php/Maximizing_performance)
+[ArchWiki: Maximizing Performance](https://wiki.archlinux.org/index.php/Maximizing_performance)  
 [ArchWiki: Solid State Drives](https://wiki.archlinux.org/index.php/Solid_State_Drives)
