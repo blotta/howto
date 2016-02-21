@@ -17,11 +17,10 @@ File transfer or direct chat
 `/dcc send <nick> <file>`
 
 Remove voice from nick
-`/devoice <nick>`
-
-`/ignore list`
-`/ignore add <nick>`
-`/ignore del <num> -all`
+`/devoice <nick>`  
+`/ignore list`  
+`/ignore add <nick>`  
+`/ignore del <num> -all`  
 
 List servers
 `/links <server> <server_mask>`
