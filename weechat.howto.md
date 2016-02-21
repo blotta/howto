@@ -16,7 +16,7 @@ File transfer or direct chat
 `/dcc chat <nick>`
 `/dcc send <nick> <file>`
 
-Remove voice from nick
+Remove voice from nick  
 `/devoice <nick>`  
 `/ignore list`  
 `/ignore add <nick>`  
