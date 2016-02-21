@@ -1,0 +1,3 @@
+services remote-fs.target, rpcbind, nfs-client.target
+
+eg. sudo systemctl start rpcbind

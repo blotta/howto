@@ -1,0 +1,10 @@
+On local computer
+
+$ ssh-keygen -t rsa
+
+
+2 files are generated under ~/.ssh : 'id_rsa' and 'id_rsa.pub'
+
+Copy public key to ssh server with:
+
+$ ssh-copy-id -i ~/.ssh/id_rsa.pub user@server.com:

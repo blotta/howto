@@ -1,0 +1,18 @@
+
+Find device path with lsbkl
+
+make sure it's not mounted
+
+# dd bs=4M if=/path/to/install.iso of=/path/to/device (e.g /dev/sdb)
+
+# sync
+
+
+
+The device will become read only
+
+To recover, execute:
+
+# dd count=1 bs=512 if=/dev/zero of=/dev/sdb && sync (subst sdb to appropriate name)
+
+

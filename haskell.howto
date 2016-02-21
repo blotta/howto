@@ -1,0 +1,97 @@
+Haskell Tutorial
+================
+
+ghci
+
+:l <file.hs>
+
+comment --  or {-   -}
+
+import Data.list
+import System.IO
+
+---Types
+
+--Int:limited
+--Interger:depends on RAM
+--Float
+--Double: decimals
+--Bool
+--Char
+--Tuple: list
+
+
+---Math
+always5 :: Int
+always5 = 5
+
+sumOfNums = sum [1..100]
+
+addEx = 5 + 4
+
+modEx = mod 5 4
+
+negNumEx = 5 + (-4)
+
+---get types
+:t sqrt
+
+---Built In Math
+piVal = pi
+ePow9 = exp 9
+logOf9 = log 9
+squared9 = 9 ** 2
+truncateVal = truncate 9.999
+roundVal = round 9.999
+ceilingVal = ceiling 9.999
+floorVal = floor 9.999
+
+sin, cos, tan, asin, atan, acos, sinh, tanh, cosh, asinh, atanh,acosh
+
+
+trueAndFalse = True && False 
+||
+notTrue = not(True)
+
+---Lists
+
+primeNums = [3,5,7,11]
+morePrimes = primeNums ++ [13,17,19,23,29]
+
+favNums = 2 : 7 : 21 : 66 : []
+
+multList = [[3,5,7],[11,13,17]]
+
+morePrimes2 = 2 : morePrimes
+
+lenPrime = lenght morePrimes2
+
+revPrime = reverse morePrimes2
+
+isListEmpty = null morePrimes2
+
+secondPrime = morePrimes2 !! 1
+
+firstPrime = head morePrimes2
+lastPrime = last morePrimes2
+
+primeInit = init morePrimes2 --all but last
+first3 = take 3 morePrimes2
+removed3 = drop 3 morePrimes2 
+
+is7InList = 7 `elem` morePrimes2
+
+max = maximum morePrimes2
+
+evenList = [2,4..20]
+
+charList = [a..z]
+
+infinite = [1..]
+
+ten2s = take 10 (repeat 2)
+
+listTimes2 = [x * 2 | x <- [1..10]]
+
+
+
