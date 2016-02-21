@@ -66,10 +66,11 @@ Using the `noatime` flag option in fstab, eliminates the need by the system to m
 
 
 > /etc/fstab
-  >> /dev/sda1   /	ext4   defaults,noatime   0 1
+  >> /dev/sda1   /	ext4   defaults,noatime   0 1  
   >> /dev/sda2   /home  ext4   defaults,noatime   0 2
  
- 
+
+
 >NOTE: This will cause issues with applications such as Mutt, as the access time of the file will eventually be previous than the modification time. To ensure this doesn't happen to the atime field, use 'relatime' instead, although it is not as effective.
 
 .
