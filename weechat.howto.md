@@ -19,27 +19,33 @@ After your nick is registered on NickServ or other, identify:
 
 This is all fine, but if you want to set a nick and connect automatically to servers  
 and channels, you can set options to a specific server.  
+
 To see the server options that can be changed:  
 `/server listfull`  
 
+To set options to a server;
+`/set irc.server.freenode.nicks <nick_you_want>`   -> you can add more by comma separating  
+`/set irc.server.freenode.autoconnect on`  
+`/set irc.server.freenode.autojoin #<channel1>,#<channel2>`  
+`/set irc.server.freenode.password <passwd>`   -> this automatically identifies with NickServ or other  
 
 
-To split screen
+To split screen  
 
  * Horizontaly: `/window splith`
  * Verticaly: `/window splitv`
 
-Bare display: Alt-L
+Bare display: Alt-L  
 
-Colored text
-`^Cc12^Cbhello ^Cb^Cc04^C_everybody^C_^Cc!`
+Colored text  
+`^Cc12^Cbhello ^Cb^Cc04^C_everybody^C_^Cc!`  
 
-Add spell check
-`/set aspell.check.default_dict "en"`
+Add spell check  
+`/set aspell.check.default_dict "en"`  
 `/aspell enable`   or   `Alt-s`
 
-File transfer or direct chat
-`/dcc chat <nick>`
+File transfer or direct chat  
+`/dcc chat <nick>`  
 `/dcc send <nick> <file>`
 
 Remove voice from nick  
@@ -48,29 +54,29 @@ Remove voice from nick
 `/ignore add <nick>`  
 `/ignore del <num> -all`  
 
-List servers
+List servers  
 `/links <server> <server_mask>`
 
-List channels
+List channels  
 `/list <channel1>,<ch2> <server> -re <regex>`
 
-Part channel
+Part channel  
 `/part <ch1>,<ch2> <msg>`
 
-Private msg
+Private msg  
 `/query [-server <server>] <nick> <text>`
 
-Quite nick or host
+Quite nick or host  
 `/quiet <ch> <nick>`
 
-Time of server
+Time of server  
 `/time <target>`
 
-Trace route server
+Trace route server  
 `/trace <target>`
 
-Info nick is
+Info nick is  
 `/whois`
 
-Info nick was
+Info nick was  
 `/whowas`
