@@ -1,3 +1,29 @@
+Adding a server  
+`/server add <name_you_want> <server>[/<port> -ssl]`  
+example  
+`/server add freenode chat.freenode.net/6697 -ssl`  
+
+Connecting to a server  
+`/connect freenode` if you added one  
+`/connect <server>` if not added  
+
+Changing nick  
+`/nick <what_ever>` -> this is the name shown to others  
+
+Joining a channel  
+`/join #<channel>`  
+
+Some channels like #archlinux require registration with a third party server to join, like NickServ  
+After your nick is registered on NickServ or other, identify:  
+`/msg NickServ identify <passwd>`  
+
+This is all fine, but if you want to set a nick and connect automatically to servers  
+and channels, you can set options to a specific server.  
+To see the server options that can be changed:  
+`/server listfull`  
+
+
+
 To split screen
 
  * Horizontaly: `/window splith`
