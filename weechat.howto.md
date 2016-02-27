@@ -23,7 +23,7 @@ and channels, you can set options to a specific server.
 To see the server options that can be changed:  
 `/server listfull`  
 
-To set options to a server;
+To set options to a server:  
 `/set irc.server.freenode.nicks <nick_you_want>`   -> you can add more by comma separating  
 `/set irc.server.freenode.autoconnect on`  
 `/set irc.server.freenode.autojoin #<channel1>,#<channel2>`  
