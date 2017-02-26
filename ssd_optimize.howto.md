@@ -31,10 +31,10 @@ This is not permanent. Changes will be reset on reboot
 
 Although the previous method will work, it is best to let udev handle the scheduler assignment. 
 >/etc/udev/rules.d/60-schedulers.rules
-
->> \#set deadline scheduler for non-rotating disks
->>ACTION=="add|change", KERNEL=="sd[a-z]", ATTR{queue/rotational}=="0", ATTR{queue/scheduler}="deadline"
-
+```bash
+>#set deadline scheduler for non-rotating disks
+>ACTION=="add|change", KERNEL=="sd[a-z]", ATTR{queue/rotational}=="0", ATTR{queue/scheduler}="deadline"
+```
 The changes should take place on the next boot. Additionally, the `deadline` scheduler will only be applied for non-rotational drives.
 
 ------------
